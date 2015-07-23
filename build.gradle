@@ -4,7 +4,7 @@ buildscript {
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:0.5.+'
+    classpath 'com.android.tools.build:gradle:1.2.3'
   }
 }
 
@@ -15,11 +15,5 @@ allprojects {
   repositories {
     mavenCentral()
   }
-
-  tasks.withType(Compile) {
-    options.encoding = "UTF-8"
-  }
 }
 
-apply plugin: 'android-reporting'
-task assemble{}
